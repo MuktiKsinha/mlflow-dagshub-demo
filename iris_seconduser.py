@@ -63,11 +63,11 @@ with mlflow.start_run():
     mlflow.log_artifact(__file__)
 
     #log model
-    mlflow.sklearn.log_model(rf,name="Random forest")
+    mlflow.sklearn.log_model(rf,"Randomforest")
     
     #set tags 
     mlflow.set_tag('name','vicky')
-    mlflow.set_tag('model','Random forest')
+    mlflow.set_tag('model','Randomforest')
 
     print('accuracy',accuracy)
 
