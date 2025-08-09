@@ -34,7 +34,7 @@ n_estimators=100
 mlflow.set_experiment('iris-rf')
 
 with mlflow.start_run():
-    rf=RandomforestClassifer(max_depth=max_depth,n_estimators=n_estimators)
+    rf=RandomForestClassifier(max_depth=max_depth,n_estimators=n_estimators)
     rf.fit(X_train,y_train)
 
     y_pred=rf.predict(X_test)
